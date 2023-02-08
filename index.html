@@ -10,13 +10,39 @@
 </head>
 
 <body>
+  
   <header class="header">
     <div class="title">
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
-
+        <picture>
+              <source
+                srcset="images/museum-320_x_180.jpg"
+                media="(max-width:320px)"
+              />
+              <source
+                srcset="images/museum-640_x_360.jpg"
+                media="(min-width:321px) and (max-width:640px)"
+              />
+              <source
+                srcset="images/museum-960_x_540.jpg"
+                media="(min-width:641px) and (max-width:960px)"
+              />
+              <source
+                srcset="images/museum-960_x_960.jpg"
+                media="(min-width:961px) and (max-width:1280px)"
+              />
+              <source
+                srcset="images/museum-1280_x_1280.jpg"
+                media="(min-width:1281px) and (max-width:2400px)"
+              />
+              <source
+                srcset="images/museum-2400_x_2400.jpg"
+                media="(min-width:2401px)"
+              />
+              <img src="images/museum-480_x_270.jpg" alt="museum interior with paintings and blue sofas" />
+      </picture>
   </header>
 </body>
 
